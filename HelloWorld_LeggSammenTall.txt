@@ -1,0 +1,31 @@
+package javaBegynner;
+import javax.swing.JOptionPane;
+
+class Beregning {
+       public int addNumbers() {       
+             System.out.println("Tast inn to tall og legg dem sammen:");
+             
+             //Få innsendt tallene
+             int x = Integer.parseInt(JOptionPane.showInputDialog("Tast inn to tall og legg dem sammen" 
+                                                                                                   + "\n" + "\n" + "Tast inn første tall"));
+             int y = Integer.parseInt(JOptionPane.showInputDialog("Tast inn to tall og legg dem sammen" 
+                                                                                                   + "\n" + "\n" + "Tast inn andre tall"));
+             System.out.print(x + "+" + y + "=");
+             
+             //Returner summen av tallene
+             return x + y;
+       }
+}
+
+public class HelloWorld {
+       
+       public static void main(String[] args) {
+             // Skriv ut "Hello, World!"
+        System.out.println("Hello, World!" + "\n");
+        
+        // Legg sammen to tall og skriv ut
+        Beregning B = new Beregning();
+        int sum = B.addNumbers();
+        System.out.println(sum);
+       }
+}
